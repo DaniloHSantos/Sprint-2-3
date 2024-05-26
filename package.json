@@ -1,0 +1,24 @@
+{
+  "name": "api-ibge-aplicacao",
+  "version": "1.0.0",
+  "description": "Aplicação que consome dados sobre a frequência de nomes no Brasil a partir da API do IBGE",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [
+    "IBGE",
+    "API",
+    "docker",
+    "node",
+    "javascript"
+  ],
+  "author": "Danilo Honorio dos Santos, Samuel de Oliveira Vanoni, Isael Aparecido Rosa, Emanuel Oliveira de Assis Domingues",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.1",
+    "path": "^0.12.7"
+  }
+}
