@@ -26,34 +26,27 @@ Desenvolvemos uma interface gráfica com `HTML` e `CSS` e utilizamos `NodeJS` e 
 ![Design sem nome (1)](https://github.com/Compass-pb-aws-2024-ABRIL/sprints-2-3-pb-aws-abril/assets/123120658/0038e72e-a5ce-42c6-9aaa-3b7bc59511af)
  
 ## :computer: Como rodar
-1. Pré-requisitos = Instale o [Docker](https://docs.docker.com/desktop/install/windows-install/) no seu computador
+1. Pré-requisitos = Instale o [Docker](https://docs.docker.com/desktop/install/windows-install/) no seu computador ou o [Node](https://nodejs.org/en)
 2. Clone o repositório na sua máquina local
 ```bash
 git clone https://github.com/Compass-pb-aws-2024-ABRIL/sprints-2-3-pb-aws-abril.git
-```
-
-```bash
 cd sprints-2-3-pb-aws-abril
-```
-
-```bash
-git branch grupo-4
-```
-
-```bash
 git checkout grupo-4
 ```
 
-```bash
-git pull --set-upstream origin grupo-4
-```
-
-3. Abra o aplicativo do Docker
+3. Rode a aplicação:
+ - Em Docker (Abra o aplicativo no seu computador)
 ```bash
 docker compose up
 ```
+ - Em Node
+```bash
+npm install
+npm run dev
+```
 
-4. Abra a [aplicação](http://localhost:80/) no seu navegador
+4. Abra a [aplicação docker](http://localhost:80/) ou a [aplicação node](http://localhost:3000)
+
 5. Caso queira parar a aplicação aperte `Cntrl + C` no terminal
  
 ## 📂 Estrutura do Projeto
@@ -100,9 +93,9 @@ O código possui sete funções: `validaInputLetras()`, `getIBGE()`, `preencheTa
 ![5a5a90b3-877c-4bb7-954b-b7214731f7fe](https://github.com/Compass-pb-aws-2024-ABRIL/sprints-2-3-pb-aws-abril/assets/123120658/bf11b947-7760-41aa-a3e2-fbfcc39e3f92)
  
 ## :anger: Dificuldades
-- Não conseguimos separar as funções do index.js em arquivos diferentes pois o import e export não estava funcionando.
-- Como foi o 1° contato com API do grupo e não tivemos muito tempo, não conseguimos muitas utilidades em Node (funções como get, post, fetch...) já que tivemos que trocar de API no meio do projeto.
-- Tivemos dificuldades em rodar a máquina EC2 na AWS, mas conseguimos!
+- Não conseguimos separar as funções do index.js em arquivos diferentes pois não conseguimos fazer o import e export funcionar.
+- Como foi o 1° contato com API do grupo não conseguimos utilizar a API que escolhemos inicialmente do jeito que queríamos e tivemos que mudar de API, o que fez com que não conseguíssemos explorar muitsa utilidades em Node (funções como get, post, fetch...).
+- Tivemos dificuldades em rodar a máquina EC2 na AWS, pois não estávamos conseguindo acessa-la via terminal e via IP público. Após nos aprofundarmos em como as sub-redes e VPCs da AWS funcionam e criar uma especificamente para a nossa aplicação, conseguimos fazer funcionar!
  
 ## ✍🏻 Autores
  
